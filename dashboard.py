@@ -39,10 +39,10 @@ st.subheader("Alertas de Asistencia Baja")
 alertas = identificar_alertas(df)
 
 if alertas:
-    st.warning("⚠️ Estudiantes con asistencia baja (<70%):")
+    st.warning("Estudiantes con asistencia < 75%")
     i = 0
     while i < len(alertas):
-        st.write(f"- {alertas[i]}")
+        st.write('alertas[i]')
         i += 1
 else:
-    st.success("✅ No hay alertas de asistencia baja.")
+    st.success('No hay alertas de asistencia.')
